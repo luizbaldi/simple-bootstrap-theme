@@ -10,10 +10,35 @@
 .slider {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background: url(../img/slider-bg.png);
+	background: url(../img/slider-bg.jpg);
 }
 
 section {
 	padding-top: 30px;
 	min-height: 100vh;
+}
+
+.small-margin-top {
+	margin-top: 15px;
+}
+
+/* Portfolio */
+.portfolio-item {
+	background: white;
+}
+
+.portfolio-item {
+	text-align: center;
+	padding-bottom: 5px;
+	margin-top: 25px;
+}
+
+footer {
+	text-align: center;
+ 	border-top: solid 1px #cce6ff;
+ 	width:100%;
+}
+
+#subject-text {
+	height: 100px;
 }
