@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simple Bootstrap Theme</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/panel.css" rel="stylesheet">
+
+    <!-- JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->    
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bar-chart fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user fa-lg"></i>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-gear"></i>
+                                    My Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    Change Password
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="text-center">
+                                <a href="#">
+                                    <i class="fa fa-power-off"></i>
+                                    Logoff
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-3">
+            <!-- Side menu navigation -->
+                <div class="panel panel-default ">
+                    <div id="colGroupOne" rol="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroupOne" data-toggle="collapse">
+                                <i class="fa fa-file"></i>
+                                Manage Posts
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse in" id="colListGroupOne">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">New Post</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Edit Post</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Delete Post</a>
+                            </li>
+                        </ul>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default ">
+                    <div id="colGroupTwo" rol="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroupTwo" data-toggle="collapse">
+                                <i class="fa fa-user"></i>
+                                Manage Users
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse in" id="colListGroupTwo">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">New User</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Edit User</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Delete User</a>
+                            </li>
+                        </ul>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+                <!-- // Side menu navigation -->
+            </div>
+            <div class="col-sm-9 text-right">
+                Column 2
+            </div>
+        </div>
+    </div>
+</body>
+</html>
