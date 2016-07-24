@@ -11,21 +11,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/panel.css" rel="stylesheet">
+    <link href="../../css/flatly.bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/panel.css" rel="stylesheet">
 
     <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
 
 </head>
 
 <body>
     
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->    
             <div class="navbar-header">
@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">Simple Bootstrap Theme</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,7 +68,7 @@
                             </li>
                             <li class="divider"></li>
                             <li class="text-center">
-                                <a href="#">
+                                <a href="login.html">
                                     <i class="fa fa-power-off"></i>
                                     Logoff
                                 </a>
@@ -84,16 +84,17 @@
         <div class="row-fluid">
             <div class="col-sm-3">
             <!-- Side menu navigation -->
+                <!-- Manage Posts panel -->
                 <div class="panel panel-default ">
-                    <div id="colGroupOne" rol="tab" class="panel-heading">
+                    <div id="managePosts" rol="tab" class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="#colListGroupOne" data-toggle="collapse">
+                            <a href="#managePostsTitle" data-toggle="collapse">
                                 <i class="fa fa-file"></i>
                                 Manage Posts
                             </a>
                         </h4>
                     </div>
-                    <div role="tabpanel" class="panel-collapse collapse in" id="colListGroupOne">
+                    <div role="tabpanel" class="panel-collapse collapse in" id="managePostsTitle">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a href="#">New Post</a>
@@ -105,20 +106,20 @@
                                 <a href="#">Delete Post</a>
                             </li>
                         </ul>
-                        <div class="panel-footer"></div>
                     </div>
                 </div>
 
+                <!-- Manage Users panel -->
                 <div class="panel panel-default ">
-                    <div id="colGroupTwo" rol="tab" class="panel-heading">
+                    <div id="manageUsers" rol="tab" class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="#colListGroupTwo" data-toggle="collapse">
+                            <a href="#manageUsersTitle" data-toggle="collapse">
                                 <i class="fa fa-user"></i>
                                 Manage Users
                             </a>
                         </h4>
                     </div>
-                    <div role="tabpanel" class="panel-collapse collapse in" id="colListGroupTwo">
+                    <div role="tabpanel" class="panel-collapse collapse in" id="manageUsersTitle">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a href="#">New User</a>
@@ -130,13 +131,77 @@
                                 <a href="#">Delete User</a>
                             </li>
                         </ul>
-                        <div class="panel-footer"></div>
                     </div>
                 </div>
-                <!-- // Side menu navigation -->
+
+                <div class="panel panel-default ">
+                    <div id="manageTasks" rol="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#manageTasksTitle" data-toggle="collapse">
+                                <i class="fa fa-check"></i>
+                                Manage Tasks
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse in" id="manageTasksTitle">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">See Tasks</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">New Task</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Edit Task</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Delete Task</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- // Side menu navigation -->
             </div>
-            <div class="col-sm-9 text-right">
-                Column 2
+            <div class="col-sm-9">
+                <div class="panel-content">
+                    <div class="panel-content-internal">
+                        <ul class="nav nav-pills nav-justified" role="tablist">
+                            <li>
+                                <a href="#" data-toggle="tab">
+                                    <i class="fa fa-inbox"></i>
+                                    Messages <span class="badge">4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="tab">
+                                    <i class="fa fa-warning"></i>
+                                    Warnings <span class="badge">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="tab">
+                                    <i class="fa fa-birthday-cake"></i>
+                                    Birthdays <span class="badge">6</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="well well-sm">
+                            <h2>Welcome User!</h2>
+                            <p>Use the side menu navigation to control the website system!</p>
+                        </div>
+
+                        <div class="page-header">
+                            <h3>Warnings:</h3>
+                        </div>
+                        <div class="alert alert-success">
+                            <strong>Congratulations!</strong> You are using the admin-panel!
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>Warning!</strong> You have until 01/01/1111 to adjust your profile!
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

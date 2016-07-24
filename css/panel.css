@@ -47,3 +47,14 @@ body {
 .panel {
 	margin-bottom: 0px;
 }
+
+.panel-content {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 5px #888; 
+}
+
+.panel-content-internal {
+   padding: 12px;
+}

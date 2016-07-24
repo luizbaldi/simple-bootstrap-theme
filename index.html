@@ -11,309 +11,39 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flatly.bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/panel.css" rel="stylesheet">
 
     <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/darkly.bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </head>
 
-<body data-spy="scroll" data-target=".navigation-menu" data-offset="100">
-    <!-- Application menu -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-menu">
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
-
-                <a class="navbar-brand" href="#main-slider">
-                    Logo
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse navigation-menu" id="navigation-menu">
-                <ul class="nav navbar-nav navbar-right text-center">
-                    <li><a href="#page-top"></a></li>
-                    <li>
-                        <a class="" href="#services">
-                            <span class="glyphicon glyphicon-send"></span>
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#portfolio">
-                            <span class="glyphicon glyphicon-globe"></span>
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#about">
-                            <span class="glyphicon glyphicon-user"></span>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="#location">
-                            <span class="glyphicon glyphicon-map-marker"></span>
-                            Location
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- // Application menu -->
-
-    <!-- Application Slider -->
-    <section class="slider">
-        <div class="container">
+<body> 
+    <div class="container text-center">
+        <div class="main-panel">
             <div class="row">
-                <div id="main-slider" class="carousel slide" data-ride="carousel">
-
-                    <!-- Slider Images -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img class="img-responsive center-block" src="img/simple-images/slider-img.png" alt="Slider Image" />
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive center-block" src="img/simple-images/slider-img.png" alt="Slider Image" />
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive center-block" src="img/simple-images/slider-img.png" alt="Slider Image" />
-                        </div>
-                    </div>
-
-                    <!-- Slider Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#main-slider" data-slide-to="1"></li>
-                        <li data-target="#main-slider" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Slider icons -->
-                    <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#main-slider" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>                
+                <div class="col-xs-12">
+                    <a href="src/template/home.html" class="btn btn-default btn-lg btn-block">
+                        <i class="fa fa-file-text-o"></i>
+                        Simple Bootstrap Theme
+                    </a>    
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="src/intranet/intranet-panel.html" class="btn btn-default btn-lg btn-block">
+                        <span class="fa fa-laptop"></span>
+                        Intranet Panel
+                    </a>        
                 </div>
             </div>
         </div>
-    </section>
-    <!-- // Application Slider -->
-
-    <!-- Services -->
-    <section id="services" class="bg-success">
-        <div class="container">
-            <header>
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2>Services</h2>
-                        <h4>Learn more about what we do!</h4>
-                    </div>
-                </div>
-            </header>
-
-            <section id="services-content">
-                <div class="col-md-4 text-center">
-                    <img src="img/simple-images/square-image.png" class="img-responsive img-circle" />
-                    <h4>Sub-title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque blandit venenatis purus, eu hendrerit purus rhoncus eu. 
-                    Sed id est pellentesque, interdum est non, pulvinar justo.</p> 
-                 </div>
-
-                <div class="col-md-4 text-center">
-                    <img src="img/simple-images/square-image.png" class="img-responsive img-circle" />
-                    <h4>Sub-title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque blandit venenatis purus, eu hendrerit purus rhoncus eu. 
-                    Sed id est pellentesque, interdum est non, pulvinar justo.</p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <img src="img/simple-images/square-image.png" class="img-responsive img-circle" />
-                    <h4>Sub-title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Quisque blandit venenatis purus, eu hendrerit purus rhoncus eu. 
-                    Sed id est pellentesque, interdum est non, pulvinar justo.</p>
-                </div>
-
-                <div class="col-xs-12 text-center">
-                    <a href="services.html" class="btn btn-default btn-lg small-margin-top">
-                        <span class="glyphicon glyphicon-send"></span>
-                        Click here to check our services
-                    </a>
-                </div>
-            </section>
-        </div>
-    </section>
-    <!-- // Services -->
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="bg-info">
-        <div class="container">
-            <header>
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2>Portfolio</h2>
-                        <h4>Learn more about our projects and jobs done!</h4>
-                    </div>
-                </div>
-            </header>
-
-            <section id="portfolio-content" class="text-center">
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <img src="img/simple-images/green-bg.png" class="img-responsive img-rounded" />
-                        <h4><strong>Client Company</strong></h4>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 text-center">
-                    <a href="portfolio.html" class="btn btn-default btn-lg small-margin-top">
-                        <span class="glyphicon glyphicon-globe"></span>
-                        Click here to check our partners
-                    </a>
-                </div>
-            </section>
-        </div>
-    </section>
-    <!-- // Portfolio -->
-
-    <!-- About -->
-    <section id="about" class="bg-warning">
-        <div class="container">
-            <header>
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2>About</h2>
-                        <h4>Learn more about about us!</h4>
-                    </div>
-                </div>
-            </header>
-
-            <section id="about-content">
-                <div class="col-md-6">
-                    <div class="col-md-8 text-right">
-                        <h4>Sub-title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Quisque blandit venenatis purus, eu hendrerit purus rhoncus eu. 
-                        Sed id est pellentesque, interdum est non, pulvinar justo.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/simple-images/square-image.png" class="img-responsive img-circle">
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="col-md-8 text-right">
-                        <h4>Sub-title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Quisque blandit venenatis purus, eu hendrerit purus rhoncus eu. 
-                        Sed id est pellentesque, interdum est non, pulvinar justo.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/simple-images/square-image.png" class="img-responsive img-circle">
-                    </div>
-                </div>
-            </section>
-                
-        </div>
-    </section>
-    <!-- // About -->
-
-    <!-- Location -->
-    <section id="location" class="bg-danger">
-        <div class="container">
-            <header>
-                <div class="col-xs-12">
-                    <div class="page-header">
-                        <h2>Location</h2>
-                        <h4>See where we are!</h4>
-                    </div>
-                </div>
-            </header>
-
-            <section id="location-content">
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17422.64382266543!2d-122.06342122276101!3d37.385910031529555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sVale+do+Sil%C3%ADcio%2C+CA%2C+EUA!5e0!3m2!1spt-BR!2sbr!4v1468414609790"
-                     width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="text-center">Contact</h4>
-                    <hr />
-                    <form name="form-contact">
-                        <div class="input-group-lg">
-                            <span class="input-group-addon" id="basic-addon1">Name</span>
-                            <input type="text" class="form-control" placeholder="ex: John Cena">
-                        </div>
-                        <div class="input-group-lg">
-                            <span class="input-group-addon" id="basic-addon1">E-mail</span>
-                            <input type="text" class="form-control" placeholder="ex: email@email.com">
-                        </div>
-                        <div class="input-group-lg">
-                            <span class="input-group-addon" id="basic-addon1">Subject</span>
-                            <textarea class="form-control" placeholder="Your message here" id="subject-text"></textarea>
-                        </div>
-                        <br />
-                        <button type="submit" class="btn btn-default btn-lg btn-block">Send</button>
-                    </form>
-                    
-                </div>
-            </section>
-        </div>
-    </section>
-    <!-- // Location -->
-
-    <footer>
-        <div class="col-xs-8">
-            &copy; Simple Bootstrap Template
-        </div>
-        <div class="col-xs-4 text-right">
-            <small>Developed by:</small>
-            <p><strong>Luiz Baldi</strong></p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
